@@ -1,0 +1,471 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .hover-effect {
+        transition: transform 0.3s, background-color 0.3s;
+    }
+    .hover-effect:hover {
+        transform: scale(1.15);
+        background-color: #ffeedb; 
+    }
+    .fruit{
+      display: inline-block;
+      margin-left: 10%;
+      line-height: 180%;
+    }
+    .fruit :hover{
+      text-shadow: 0 4px 8px rgb(253, 255, 253);
+    }
+    .foot{
+      display: inline-block;
+        justify-content: space-around;
+        align-items: center; 
+        flex-wrap: wrap;
+        padding: 10px 0;
+        background:rgb(0, 112, 0);
+        color:black;
+        width: 100%;
+        height: 250px; 
+        position: relative;
+        bottom: 0;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .foot ul {
+      list-style-type: none; 
+      padding-left: 0;
+    }
+    .navbar .nav-link {
+      color: white; 
+    }
+    .navbar .nav-link:hover {
+      color: rgb(0, 47, 255); 
+    }
+    .card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 5px 10px black; 
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+  }
+  li :hover{
+    text-shadow: 0 4px 8px rgb(253, 255, 253);
+  }
+  li{
+    color: black;
+  }
+  .sambu:hover{
+    transform: scale(1.10); 
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+  }
+  .D :hover{
+    transform: scale(1.15); 
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+  }
+  
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  </head>
+  <body style="background-color: rgb(240, 242, 173); width: 100%;">
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgb(251, 255, 0); color: white; height: 70px;">
+      <div class="container-fluid">
+          <img src="./bootstrap images/Black_and_Green_Flat_Illustrated_Organic_Cosmetics_Logo-removebg-preview.png" alt="" height="80" width="80">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 5%;">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="about.html" style="color: black;"><i class="fa-regular fa-address-card"></i>&nbsp;&nbsp;About Us</a>
+                  </li>&nbsp;&nbsp;&nbsp;
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="contact.html" style="color: black"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Contact Us</a>
+                  </li>&nbsp;&nbsp;&nbsp;
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#" style="color: black"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;Cart</a>
+                  </li>&nbsp;&nbsp;&nbsp;
+                  <li class="nav-item">
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border: none;">
+                        <i class="fa-solid fa-right-from-bracket"></i>&nbsp;&nbsp;Logout
+                      </button>
+                  </li>
+              </ul>
+              <form class="d-flex" style="margin-right: 5%;">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit" style="background-color: blue; color: white;">Search</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Logout</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  Are you sure you want to logout?
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" style="width: 15%;"><a href="index.html" style="text-decoration: none; color: white;">Ok</a></button>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  </div>
+  <br><br><br>
+  <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true" style="width: 100%;">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./bootstrap images/Orange and Green Nature Colorful Fruit Store Banner.png" class="d-block w-100" alt="..." style="height: 400px; object-fit: 100%;">
+        </div>
+        <div class="carousel-item">
+            <img src="./bootstrap images/Red and Yellow Fresh Colorful Fruit Store Banner.png" class="d-block w-100" alt="..." style="height: 400px; object-fit: 100%;">
+        </div>
+        <div class="carousel-item">
+            <img src="./bootstrap images/Yellow Modern Fruit Store Promotion Banner.png" class="d-block w-100" alt="..." style="height: 400px; object-fit: 100%;">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+    <br>
+    <center><h1><span style="color: rgb(108, 3, 3); font-size: 160%;">GREEN</span>  <span style="color: rgb(9, 110, 0); font-size: 120%;">Leaf Fruit...</span></h1></center>
+    <br>
+    <div class="lap">
+    <div style="margin-left: 3.5%; box-shadow: inset;">
+    <div class="card m-4"  style= "width: 230px; display: inline-block; background-color:lightyellow;" >
+      <img src="bootstrap images/banana-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Banana</span></h5>
+        <p class="card-text">Banana Ready To Eat 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹60 </span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹100</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 20% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p1.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+      </div>
+    </div>
+    <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/appleimg-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Apples</span></h5>
+        <p class="card-text">Fresh apple hybrid 1 kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹120 </span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹180</span> |<span style="color:   rgb(44, 138, 0); font-size: small;"> 20% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p2.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+      </div>
+    </div>
+    <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/orange2-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Orange</span></h5>
+        <p class="card-text">Fresh orenges hybrid 1 kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹110</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹180</span> |<span style="color: rgb(44, 138, 0); font-size: small;"> 25% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p3.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+    </div>
+    </div>
+    <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/pomegranate-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Pomegranate</span></h5>
+        <p class="card-text">Fresh pomegranate 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹110</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹170</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 25% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p4.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+      </div>
+    </div>
+        <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+          <img src="bootstrap images/straberry-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Strawberry</span></h5>
+        <p class="card-text">Fresh Strawberry 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹160</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹210</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 27% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p5.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+       </div>
+        </div>
+        <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+          <img src="bootstrap images/mango-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Mango</span></h5>
+        <p class="card-text">Fresh mangos 1kg</p>
+        <h2> <span style="color: blue; font-size: large;">₹80</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹140</span> |<span style="color: rgb(44, 138, 0); font-size: small;"> 30% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p6.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+      </div>
+        </div>
+        <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+          <img src="bootstrap images/grapes-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Grapes</span></h5>
+        <p class="card-text">Black grapes for fresh 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹75</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹120</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 23% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p7.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+      </div>
+        </div>
+        <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/greengrapes-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Greengrapes</span></h5>
+        <p class="card-text">Fresh greengrapes for 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹80 </span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹130</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 18% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p8.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+       </div>
+        </div>
+        <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+        <img src="bootstrap images/blackberry-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Blu Berry</span></h5>
+        <p class="card-text">Herbal bluberry for 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹180</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹310</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 40% Offer</span></h2> 
+       <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+       <br>
+       <a href="p9.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+      </div>
+        </div>
+        <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+          <img src="bootstrap images/watermelon-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">WaterMelon</span></h5>
+        <p class="card-text">Healthy watermalon 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹50</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹80</span> |<span style="color: rgb(44, 138, 0); font-size: small;"> 15% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p10.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+       </div >
+        </div>
+        <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+          <img src="bootstrap images/red_cherry-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Red Cherry</span></h5>
+        <p class="card-text">Tasty RedCherry 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹130 </span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹190</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 30% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p11.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+       </div>
+    </div>
+    <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/papaya-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Papaya</span></h5>
+        <p class="card-text">Sweet fully papaya 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹40</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹100</span> |<span style="color: rgb(44, 138, 0); font-size: small;"> 60% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p12.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+       </div>
+    </div>
+    <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/kiwi-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Kiwi</span></h5>
+        <p class="card-text">Kiwi fruit for high fiber 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹105</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹210</span> |<span style="color: rgb(44, 138, 0); font-size: small;"> 50% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p13.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+        </div>
+    </div>
+    <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/chikoo-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Chikoo</span></h5>
+        <p class="card-text">Potassium fruit chikoo 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹60</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹100</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 40% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p14.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+        </div>
+    </div>
+    <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/peach-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Peach</span></h5>
+        <p class="card-text">Vitamin C in peach 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹160 </span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹200</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 20% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p15.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+       </div>
+    </div>
+    <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/raspberry-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Raspberry</span></h5>
+        <p class="card-text">Fresh Rasberry fruit 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹210</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹260</span> |<span style="color: rgb(44, 138, 0); font-size: small;"> 25% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p16.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+      </div>
+    </div>
+    <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/Dragon_Fruit-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">DragonFruit</span></h5>
+        <p class="card-text">Healthy Dragonfruit 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹170</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹220</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 30% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p17.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+      </div>
+    </div>
+    <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/lychee-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Lychee</span></h5>
+        <p class="card-text">Fresh lychee fruit 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹120</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹160</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 20% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p18.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+      </div>
+    </div>
+    <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/red_banana-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">RedBanana</span></h5>
+        <p class="card-text">Fresh RedBanana 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹70 </span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹100</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 20% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p19.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+      </div>
+    </div>
+    <div class="card m-4 hover-effect"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/pine-removebg-preview (1).png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">PineApple</span></h5>
+        <p class="card-text">Fresh pineapple for 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹60</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹100</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 20% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p20.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+      </div>
+    </div>
+    <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/Avocado-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Avocado</span></h5>
+        <p class="card-text">Health Avocado 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹110</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹140</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 23% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p21.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+       </div>
+    </div>
+    <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/starfruit-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">StarFruit</span></h5>
+        <p class="card-text">Fresh StarFruit 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹140</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹180</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 25% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p22.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+       </div>
+    </div>
+    <div class="card m-4"  style= "width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/passionfruit-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">PassionFruit</span></h5>
+        <p class="card-text">Health PassionFruit 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹90</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹140</span> |<span style="color:  rgb(44, 138, 0); font-size: small;"> 60% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p23.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+       </div>
+    </div>
+    <div class="card m-4"  style="width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/lime-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Lime</span></h5>
+        <p class="card-text">Sour & Sweet lime 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹80</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹120</span> |<span style="color:  rgb(44, 138, 0); font-size: small;">32% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p24.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+       </div>
+    </div>
+    <div class="card m-4"  style="width: 230px; display: inline-block; background-color: lightyellow;" >
+      <img src="bootstrap images/lime-removebg-preview.png" class="card-img-top" alt="..." height="120" width="10">
+      <div class="card-body">
+        <h5 class="card-title"><span style="color: blue; font-size: large;">Lime</span></h5>
+        <p class="card-text">Sour & Sweet lime 1kg.</p>
+        <h2> <span style="color: blue; font-size: large;">₹80</span> |<span style="text-decoration: line-through; color: rgb(133, 77, 77); font-size: small;"> ₹120</span> |<span style="color:  rgb(44, 138, 0); font-size: small;">32% Offer</span></h2> 
+        <h4><span style="font-size: medium;">Rattings</span>&nbsp;&nbsp;<span style="color: rgb(255, 217, 0); font-size: medium;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span></h4>
+        <br>
+        <a href="p24.html" class="btn btn-primary" style="width: 120px; height: 32px; margin-left: 35px;"><span style="font-size: 12px;"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span></a>&nbsp;
+       </div>
+    </div>
+    
+  </div>
+  </div>
+</div>
+<center><h4><span style="font-size: xxx-large; color: rgb(39, 57, 248);"><i class="fa-regular fa-handshake"></i></span></h4></center>
+<center><h6><span style="font-size: xx-large; color: rgb(123, 3, 3);">&nbsp;&nbsp;&nbsp;&nbsp;Dear Customers Thanks For Your Support...</span><span style="color: red; font-size: x-large;"><i class="fa-solid fa-heart"></i>&nbsp;<i class="fa-solid fa-heart"></i>&nbsp;<i class="fa-solid fa-heart"></i></span></h6></center>
+  <br>
+  <footer class="text-white" style="width: 100%; padding: 20px 0; background-color: rgb(251, 255, 0);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h3 class="sambu" style="color: black;">Green Leaf Fruits...</h3>
+                <ul class="list-unstyled">
+                    <li class="sambu">Healthy fruit</li>
+                    <li class="sambu">Tasty & Delicious Fruit</li>
+                    <li class="sambu">All types of fruits are available</li>
+                    <li class="sambu">Low cost products</li>
+                    <li class="sambu">More offers included</li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h3 class="sambu"  style="color: black;">About Application...</h3>
+                <ul class="list-unstyled">
+                    <li class="sambu">All are fresh fruits</li>
+                    <li class="sambu">It helps our health</li>
+                    <li class="sambu">It's the most trustable app</li>
+                    <li class="sambu">10L+ users like this app</li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h3 class="sambu" style="color: black;">Contacts...</h3>
+                <ul class="list-unstyled">
+                    <li class="sambu"><i class="fa-solid fa-phone"></i> 9600231782</li>
+                    <li class="sambu"><i class="fa-brands fa-instagram"></i> dinesh42096@</li>
+                    <li class="sambu"><i class="fa-solid fa-envelope"></i> dinesh42096@gmail.com</li>
+                    <li class="sambu"><i class="fa-solid fa-location-dot"></i> Green Leaf Fruits, Namakkal, Near Government Hospital.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+   </body>
+  </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            margin-left: 70%;
+            background-color: #fff;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0.35);
+            position: relative;
+            overflow: hidden;
+            width: 350px;
+            max-width: 100%;
+            min-width: 200px;
+            align-items: center;
+            justify-content: center;
+            height: 370px;
+           
+           
+        }
+        .container label{
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.3px;
+            margin: 20px 0;
+        }
+        .container span{
+            font-size: 15px;
+        }
+        button{
+            color: white;
+            background-color:rgb(238, 255, 0);
+            height: 30px;
+            width: 100px;
+            font-size: 80%;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            transition: 0.4s;
+        
+        }
+        button:hover{
+            background-color: rgb(21, 255, 0);
+        }
+        a{
+            text-decoration: none;
+        }
+        h1{
+            margin-top: 8%;
+        }
+    </style>
+</head>
+<body style="background-image: url(./orange-6508617_1280.jpg); background-size: cover; background-position: center; height: 70vh;">
+    <h1><span style="margin-left:74%;">Sign-in/Register</span></h1>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="" name="" id="">
+                <label>Username&nbsp;&nbsp;&nbsp;:</label>
+                <input type="text" id="username" required><br><br>
+                <label>Phone No&nbsp;&nbsp;&nbsp;:</label>
+                <input type="number" id="phoneno" required><br><br>
+                <label>Mail_id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                <input type="text" id="email" required><br><br>
+                <label>Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                <input type="radio" name="r1" value="Male" required><span style="color: black;">Male</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="r1" value="Female" required><span style="color: black;">Female</span><br><br>
+                <label>Password&nbsp;&nbsp;:</label>
+                <input type="password" id="password" required><br><br>
+                <label>Confirm&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                <input type="password" id="password" required><br><br><br>
+                <center><button type="submit" id="loginButton" button><a href="home.html" button> Register</a></button>
+                </center>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
